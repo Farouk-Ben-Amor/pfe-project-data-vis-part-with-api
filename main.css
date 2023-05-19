@@ -1,0 +1,123 @@
+/**
+ * main.css
+ *
+ * @format
+ */
+
+/* Global styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.column {
+	width: 40%;
+	padding: 10px;
+}
+
+.chart-container {
+	width: 100%;
+	margin: 20px;
+}
+
+/* Review Chart styles */
+#reviewChart {
+	width: 100%;
+	height: 600px;
+
+	margin-right: 60px;
+}
+
+/* Owner Chart styles */
+#ownerChart {
+	width: 100%;
+	height: 400px;
+	margin-bottom: 250px;
+	margin-left: 60px;
+}
+
+.kpi-card {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 40px;
+	text-align: center;
+	transition: transform 0.3s ease-in-out;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative; /* Added position property */
+	overflow: hidden; /* Added overflow property */
+	max-width: 500px;
+	margin-left: 50px;
+}
+
+.kpi-card:hover {
+	transform: scale(1.05); /* Increased scale on hover */
+}
+
+.kpi-card::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.kpi-card:hover::before {
+	opacity: 1; /* Increased opacity on hover */
+}
+
+.kpi-card .kpi-item {
+	margin: 10px;
+}
+
+.kpi-card h1 {
+	color: #333;
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.kpi-card p {
+	color: #888;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+/* Add some extra styling for the chart containers */
+.chart-container {
+	margin-bottom: 20px;
+}
+/* Project Pie Chart styles */
+#projectPieChart {
+	width: 100%;
+	height: 300px;
+	transform: scale(0.9); /* Adjust the scale value to make it smaller */
+}

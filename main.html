@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Project Charts</title>
+  <!-- Link the main.css file -->
+  <link rel="stylesheet" href="main.css" />
+  <!-- Include Chart.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Include your custom script.js file -->
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>TeamUpWeb Charts</h1>
+  <div class="container">
+    <div class="row">
+      <div class="chart-container">
+        <h3>Number of active Developers and Projects</h3>
+        <div class="kpi-card">
+          <div class="kpi-item">
+            <h1 id="developerCount"></h1>
+            <p>Total Developers</p>
+          </div>
+          <div class="kpi-item">
+            <h1 id="projectCount"></h1>
+            <p>Total Projects</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="chart-container">
+			<br/>
+			<br/>
+          <h3>Projects Reviews</h3>
+          <canvas id="reviewChart"></canvas>
+        </div>
+      </div>
+    </div>
+	<br/>
+	
+    <div class="row">
+      <div class="column">
+
+        <div class="chart-container">
+			<br/>
+			<br/>
+			<br/>
+          <h3>Developer Projects Distribution By total projects</h3>
+          <canvas id="projectPieChart"></canvas>
+        </div>
+      </div>
+      <div class="column">
+        <div class="chart-container">
+          <h3>Developers Projects</h3>
+          <canvas id="ownerChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
